@@ -44,13 +44,21 @@
       text-align: center;
     }
 
-    #footer {
+    #footer1 {
         position: fixed;
         margin-top: -150px; /* negative value of footer height */
         height: 150px;
         clear:both;
         padding-top:20px;
         background-color: lightgrey;
+    }
+
+    #footer2 {
+      text-align: left;
+    }
+
+    #footer3 {
+      text-align: right;
     }
 
   </style>
@@ -82,19 +90,19 @@
 
         <br>
 
-      <footer>
+      <footer id="footer1">
         <div class="container">
           <div class="second-bar">
-             <div class="container">
-                  <h2 class="logo"> © 2017 Jack Douglas </h2>
+             <div class="container row">
+                  <h2 id="footer2"> © 2017 Jack Douglas </h2>
                   <div class="social-icons">
-                      <h2> Made on
+                      <h3 id="footer3"> Made on
                         <a href="https://github.com/j-douglas/j-douglas.github.io"> 
                           <i class="fa fa-github fa-lg" style="color: #3F3E3E"></i>
                         </a>
                         with
                         <i class="fa fa-code fa-lg" style="color: #3F3E3E"></i>
-                      </h2>
+                      </h3>
                   </div>
               </div>
           </div>
