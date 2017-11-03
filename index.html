@@ -18,7 +18,7 @@
   <style>
  
 
-  	body {
+  	.body {
   		background-color: #EAF9FA;
   	}
 
@@ -47,19 +47,23 @@
         height: 150px;
         clear:both;
         padding-top:20px;
+        background-color: lightgrey;
     }
 
   </style>
   
   <body>
 
-        <nav class="navbar sticky-top navbar-light" id="navbar">
+        <nav class="navbar sticky-top navbar-light bg-faded" id="navbar">
           <div class="top clearfix">
             <a class="navbar-brand center" href="index.html">
               <img src="https://i.imgur.com/6nEJrsG.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
             </a>
           </div>
           <ul id="tabs" class="left">
+            <li class="nav-item">
+              <a class="nav-link" href="#AboutMe"> About Me </a>
+            </li>
           </ul>
         </nav>
 
@@ -76,23 +80,20 @@
         <br>
 
       <div class="container"> 
-        <footer class="site-footer">
-
-          <div style="color: #294547">
+        <footer class="site-footer" id="footer">
 
             <div class="row">
                   <p style="text-align: center;"> © 2017 Jack Douglas</p>
             </div>
             <div class="row">
-                  <p> Made on  </p>
+                  "Made on  "
                   <a href="https://github.com/j-douglas/j-douglas.github.io"> 
                       <i class="fa fa-github fa-lg" style="color: #3F3E3E"></i>
                   </a> 
-                  <p>  with  </p>
+                  " with "
                   <i class="fa fa-code fa-lg" style="color: #3F3E3E"></i>
             </div>
 
-          </div>
         
         </footer>
       </div>
