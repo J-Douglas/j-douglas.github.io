@@ -89,18 +89,17 @@
     }
 
     .navbar-header {
-    float: left;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
+      float: left;
     }
     .navbar-brand {
       float:none;
+      padding: 15px;
+      text-align: center;
+      width: 100%;
     }
     
     .nav-tabs {
       float: none;
-      display: inline-block;
       text-align: left;
     }
 
@@ -110,13 +109,15 @@
 
     <nav class="navbar sticky-top navbar-light bg-faded" id="navbar">
       <div class="navbar-header">
-        <ul id="nav nav-tabs">
-          <li class="nav-item"><a class="nav-link" href="#AboutMe"> About Me </a></li>
-          <li class="nav-item"><a class="nav-link" href="#Projects"> Projects </a></li>
-          <li class="nav-item"><a class="nav-link" href="#Skills"> Skills </a></li>
-          <li class="nav-item"><a class="nav-link" href="#Awards"> Awards </a></li>
-          <li class="nav-item"><a class="nav-link" href="#Contact"> Contact </a></li>
-        </ul>
+        <div class="row">
+          <ul id="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link" href="#AboutMe"> About Me </a></li>
+            <li class="nav-item"><a class="nav-link" href="#Projects"> Projects </a></li>
+            <li class="nav-item"><a class="nav-link" href="#Skills"> Skills </a></li>
+            <li class="nav-item"><a class="nav-link" href="#Awards"> Awards </a></li>
+            <li class="nav-item"><a class="nav-link" href="#Contact"> Contact </a></li>
+          </ul>
+        </div>
         <a class="navbar-brand" href="#Home">
           <img src="https://i.imgur.com/6nEJrsG.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
         </a> 
@@ -126,14 +127,10 @@
 
     <section id="Home">
       <div class="container">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4" style="text-align: center;">
+        <div class="col-md-12" style="text-align: center;">
           <p2 id="intro1"> Hi! My name is <p1 id="intro2"> <b> Jack Douglas</b></p1>.</p2>
           <br>
           <p3 id="intro3"> This is my personal website. Have a look around! </p3>
-        </div>
-        <div class="col-md-4">
         </div>
       </div>
     </section>
