@@ -28,7 +28,7 @@
   	#AboutMe {
   		background-color: #EAF9FA;
       padding-top: 20px;
-      padding-bottom: 10px;
+      padding-bottom: 8px;
   	}
 
     #Projects {
@@ -38,7 +38,7 @@
     #Skills {
       background-color: #EAF9FA;
       padding-top: 20px;
-      padding-bottom: 10px;
+      padding-bottom: 8px;
     }
 
     #Awards {
@@ -48,7 +48,7 @@
     #Contact {
       background-color: #EAF9FA;
       padding-top: 20px;
-      padding-bottom: 10px;
+      padding-bottom: 8px;
     }
 
     #navbar {
@@ -94,7 +94,15 @@
     text-align: center;
     width: 100%;
     }
-    .navbar-brand {float:none;}
+    .navbar-brand {
+      float:none;
+    }
+    
+    .nav-tabs {
+      float: none;
+      display: inline-block;
+      text-align: left;
+    }
 
   </style>
   
@@ -102,7 +110,7 @@
 
     <nav class="navbar sticky-top navbar-light bg-faded" id="navbar">
       <div class="navbar-header">
-        <ul id="nav justify-content-left">
+        <ul id="nav nav-tabs">
           <li class="nav-item"><a class="nav-link" href="#AboutMe"> About Me </a></li>
           <li class="nav-item"><a class="nav-link" href="#Projects"> Projects </a></li>
           <li class="nav-item"><a class="nav-link" href="#Skills"> Skills </a></li>
