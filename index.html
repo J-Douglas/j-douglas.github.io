@@ -45,7 +45,6 @@
     }
 
     #footer1 {
-        position: relative;;
         margin-top: -50px; /* negative value of footer height */
         height: 50px;
         clear: both;
@@ -63,13 +62,21 @@
       float: right;
     }
 
+    .navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    }
+    .navbar-brand {float:none;}
+
   </style>
   
   <body>
 
     <nav class="navbar sticky-top navbar-light bg-faded" id="navbar">
-      <div class="top clearfix">
-        <a class="navbar-brand center" href="#Home">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#Home">
           <img src="https://i.imgur.com/6nEJrsG.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
         </a>
       </div>
@@ -78,7 +85,7 @@
           <a class="nav-link" href="#AboutMe"> About Me </a>
           <a class="nav-link" href="#Projects"> Projects </a>
           <a class="nav-link" href="#Skills"> Skills </a>
-          <a class="nav-link" href="#Awards/Achievements"> Awards & Achievements </a>
+          <a class="nav-link" href="#Awards/Achievements"> Awards </a>
           <a class="nav-link" href="#Contact"> Contact </a>
         </li>
       </ul>
@@ -87,9 +94,7 @@
 
     <section id="Home">
       <div class="container">
-        <p2 id="intro1"> Hi! My name is 
-          <p1 id="intro2"> <b> Jack Douglas</b></p1>
-        .</p2>
+        <p2 id="intro1"> Hi! My name is <p1 id="intro2"> <b> Jack Douglas</b></p1>.</p2>
         <br>
         <p3 id="intro3"> This is my personal website. Have a look around! </p3>
       </div>
@@ -107,7 +112,7 @@
 
     </section>
 
-    <section id="Awards/Achievements">
+    <section id="Awards">
 
     </section>
 
