@@ -191,8 +191,12 @@
       float: center;
     }
 
-    #pages {
+    #pagesL {
       float: left;
+    }
+
+    #pagesR {
+      float: right;
     }
 
   </style>
@@ -201,23 +205,33 @@
 
     <nav class="navbar sticky-top" id="navbar"> 
       <div class="navbar-header row">
-        <div class="col-md-12">
+        <div class="col-md-4">
           <div class="tabbable-panel">
             <div class="tabbable-line">
-              <ul id="pages" class="nav nav-tabs">
+              <ul id="pagesL" class="nav nav-tabs">
                 <li><a data-toggle="tab" style="text-decoration: none" href="#Home"> Home </a></li>
                 <li><a data-toggle="tab" style="text-decoration: none" href="#AboutMe"> About Me </a></li>
                 <li><a data-toggle="tab" style="text-decoration: none" href="#Projects"> Projects </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">  
+          <a class="navbar-brand" href="index.html" id="logo">
+            <img src="images/JD.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <div class="tabbable-panel">
+            <div class="tabbable-line">
+              <ul id="pageR" class="nav nav-tabs">
                 <li><a data-toggle="tab" style="text-decoration: none" href="#Skills"> Skills </a></li>
                 <li><a data-toggle="tab" style="text-decoration: none" href="#Awards"> Awards </a></li>
                 <li><a data-toggle="tab" style="text-decoration: none" href="#Contact"> Contact </a></li>
               </ul>
             </div>
           </div>
-            <a class="navbar-brand" href="index.html" id="logo">
-              <img src="images/JD.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
-            </a> 
-          </div>
+        </div>
       </div>
     </nav>
 
