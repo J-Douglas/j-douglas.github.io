@@ -187,14 +187,6 @@
       padding-bottom: 15px;
     }
 
-    .nav .nav-tabs {
-      text-decoration: none;
-    }
-
-    .fa .fa-github .fa-lg {
-      text-decoration: none;
-    }
-
   </style>
   
   <body>
@@ -204,11 +196,12 @@
         <div class="tabbable-panel">
           <div class="tabbable-line">
             <ul class="nav nav-tabs">
-              <li><a data-toggle="tab" href="#AboutMe"> About Me </a></li>
-              <li><a data-toggle="tab" href="#Projects"> Projects </a></li>
-              <li><a data-toggle="tab" href="#Skills"> Skills </a></li>
-              <li><a data-toggle="tab" href="#Awards"> Awards </a></li>
-              <li><a data-toggle="tab" href="#Contact"> Contact </a></li>
+              <li><a data-toggle="tab" style="text-decoration: none" href="#Home"> Home </a></li>
+              <li><a data-toggle="tab" style="text-decoration: none" href="#AboutMe"> About Me </a></li>
+              <li><a data-toggle="tab" style="text-decoration: none" href="#Projects"> Projects </a></li>
+              <li><a data-toggle="tab" style="text-decoration: none" href="#Skills"> Skills </a></li>
+              <li><a data-toggle="tab" style="text-decoration: none" href="#Awards"> Awards </a></li>
+              <li><a data-toggle="tab" style="text-decoration: none" href="#Contact"> Contact </a></li>
             </ul>
           </div>
         </div>
@@ -218,8 +211,48 @@
       </div>
     </nav>
 
+
+
     <section id="Home">
+      <nav class="navbar sticky-top" id="navbar"> 
+        <div class="navbar-header">
+          <div class="tabbable-panel">
+            <div class="tabbable-line">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" style="text-decoration: none" href="#Home"> Home </a></li>
+                <li><a data-toggle="tab" style="text-decoration: none" href="#AboutMe"> About Me </a></li>
+                <li><a data-toggle="tab" style="text-decoration: none" href="#Projects"> Projects </a></li>
+                <li><a data-toggle="tab" style="text-decoration: none" href="#Skills"> Skills </a></li>
+                <li><a data-toggle="tab" style="text-decoration: none" href="#Awards"> Awards </a></li>
+                <li><a data-toggle="tab" style="text-decoration: none" href="#Contact"> Contact </a></li>
+              </ul>
+            </div>
+          </div>
+            <a class="navbar-brand" href="index.html" id="logo">
+              <img src="images/JD.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
+            </a> 
+        </div>
+      </nav>
       <div class="container">
+        <nav class="navbar sticky-top" id="navbar"> 
+          <div class="navbar-header">
+            <div class="tabbable-panel">
+              <div class="tabbable-line">
+                <ul class="nav nav-tabs">
+                  <li><a data-toggle="tab" style="text-decoration: none" href="#Home"> Home </a></li>
+                  <li class="active"><a data-toggle="tab" style="text-decoration: none" href="#AboutMe"> About Me </a></li>
+                  <li><a data-toggle="tab" style="text-decoration: none" href="#Projects"> Projects </a></li>
+                  <li><a data-toggle="tab" style="text-decoration: none" href="#Skills"> Skills </a></li>
+                  <li><a data-toggle="tab" style="text-decoration: none" href="#Awards"> Awards </a></li>
+                  <li><a data-toggle="tab" style="text-decoration: none" href="#Contact"> Contact </a></li>
+                </ul>
+              </div>
+            </div>
+              <a class="navbar-brand" href="index.html" id="logo">
+                <img src="images/JD.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
+              </a> 
+          </div>
+        </nav>
         <div class="col-md-12" style="text-align: center;">
           <p2 id="intro1"> Hi! My name is <p1 id="intro2"> <b> Jack Douglas</b></p1>.</p2>
           <br>
@@ -228,11 +261,15 @@
       </div>
     </section>
 
+
+
     <section id="AboutMe">
       <div class="container">
         <p> This is the about me section. </p>
       </div>
     </section>
+
+
 
     <section id="Projects">
       <div class="container">
@@ -240,11 +277,15 @@
       </div>
     </section>
 
+
+
     <section id="Skills">
       <div class="container">
         <p> This is the skills section. </p>
       </div>
     </section>
+
+
 
     <section id="Awards">
       <div class="container">
@@ -252,11 +293,15 @@
       </div>
     </section>
 
+
+
     <section id="Contact">
       <div class="container">
         <p> This is the contact section. </p>
       </div>
     </section>
+
+
 
     <div>
     <footer class="footer" id="footer1">
@@ -272,7 +317,7 @@
                   <div class="col-md-4">
                     <h3 id="footer3"> Made on
                       <a href="https://github.com/j-douglas/j-douglas.github.io"> 
-                        <i class="fa fa-github fa-lg" style="color: #3F3E3E"></i>
+                        <i class="fa fa-github fa-lg" style="color: #3F3E3E; text-decoration: none"></i>
                       </a>
                       with
                       <i class="fa fa-code fa-lg" style="color: #3F3E3E"></i>
