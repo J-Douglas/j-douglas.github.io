@@ -191,27 +191,15 @@
       float: center;
     }
 
-    #tabHome {
+    .text-left {
       text-align: left;
     }
 
-    #tabAbout {
+    .text-center {
       text-align: center;
     }
 
-    #tabProjects {
-      text-align: right;
-    }
-
-    #tabSkills {
-      text-align: left;
-    }
-
-    #tabAwards {
-      text-align: center;
-    }
-
-    #tabContact {
+    .text-right {
       text-align: right;
     }
 
@@ -225,9 +213,9 @@
           <div class="tabbable-panel">
             <div class="tabbable-line">
               <ul class="nav nav-tabs">
-                <li><a id="tabHome" data-toggle="tab" style="text-decoration: none" href="#Home"> Home </a></li>
-                <li><a id="tabAbout" data-toggle="tab" style="text-decoration: none" href="#AboutMe"> About Me </a></li>
-                <li><a id="tabProjects" data-toggle="tab" style="text-decoration: none" href="#Projects"> Projects </a></li>
+                <li><a class="text-left" data-toggle="tab" style="text-decoration: none" href="#Home"> Home </a></li>
+                <li><a class="text-center" data-toggle="tab" style="text-decoration: none" href="#AboutMe"> About Me </a></li>
+                <li><a class="text-right" data-toggle="tab" style="text-decoration: none" href="#Projects"> Projects </a></li>
               </ul>
             </div>
           </div>
@@ -241,9 +229,9 @@
           <div class="tabbable-panel">
             <div class="tabbable-line">
               <ul class="nav nav-tabs">
-                <li><a id="tabSkills" data-toggle="tab" style="text-decoration: none" href="#Skills"> Skills </a></li>
-                <li><a id="tabAwards" data-toggle="tab" style="text-decoration: none" href="#Awards"> Awards </a></li>
-                <li><a id="tabContact" data-toggle="tab" style="text-decoration: none" href="#Contact"> Contact </a></li>
+                <li><a class="text-left" data-toggle="tab" style="text-decoration: none" href="#Skills"> Skills </a></li>
+                <li><a class="text-center" data-toggle="tab" style="text-decoration: none" href="#Awards"> Awards </a></li>
+                <li><a class="text-right" data-toggle="tab" style="text-decoration: none" href="#Contact"> Contact </a></li>
               </ul>
             </div>
           </div>
@@ -266,7 +254,10 @@
 
     <section id="AboutMe">
       <div class="container">
-        <p> This is the about me section. </p>
+        <h2 style="text-align: center;">
+          <span class="main-head"> About Me </span>
+          <span class="sub-head"> Testing tralalala </span>
+        </h2>
       </div>
     </section>
 
@@ -318,7 +309,7 @@
                   <div class="col-md-4">
                     <h3 id="footer3"> Made on
                       <a href="https://github.com/j-douglas/j-douglas.github.io"> 
-                        <i class="fa fa-github fa-lg" style="color: #3F3E3E;" style="text-decoration: none"></i>
+                        <i class="fa fa-github fa-lg" style="color: #3F3E3E; text-decoration: none"></i>
                       </a>
                       with
                       <i class="fa fa-code fa-lg" style="color: #3F3E3E"></i>
