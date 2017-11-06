@@ -191,27 +191,33 @@
       float: center;
     }
 
+    #pages {
+      float: left;
+    }
+
   </style>
   
   <body>
 
     <nav class="navbar sticky-top" id="navbar"> 
       <div class="navbar-header row">
-        <div class="tabbable-panel">
-          <div class="tabbable-line">
-            <ul class="nav nav-tabs">
-              <li><a data-toggle="tab" style="text-decoration: none" href="#Home"> Home </a></li>
-              <li><a data-toggle="tab" style="text-decoration: none" href="#AboutMe"> About Me </a></li>
-              <li><a data-toggle="tab" style="text-decoration: none" href="#Projects"> Projects </a></li>
-              <li><a data-toggle="tab" style="text-decoration: none" href="#Skills"> Skills </a></li>
-              <li><a data-toggle="tab" style="text-decoration: none" href="#Awards"> Awards </a></li>
-              <li><a data-toggle="tab" style="text-decoration: none" href="#Contact"> Contact </a></li>
-            </ul>
+        <div class="col-md-12">
+          <div class="tabbable-panel">
+            <div class="tabbable-line">
+              <ul id="pages" class="nav nav-tabs">
+                <li><a data-toggle="tab" style="text-decoration: none" href="#Home"> Home </a></li>
+                <li><a data-toggle="tab" style="text-decoration: none" href="#AboutMe"> About Me </a></li>
+                <li><a data-toggle="tab" style="text-decoration: none" href="#Projects"> Projects </a></li>
+                <li><a data-toggle="tab" style="text-decoration: none" href="#Skills"> Skills </a></li>
+                <li><a data-toggle="tab" style="text-decoration: none" href="#Awards"> Awards </a></li>
+                <li><a data-toggle="tab" style="text-decoration: none" href="#Contact"> Contact </a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-          <a class="navbar-brand col-md-12" href="index.html" id="logo">
-            <img src="images/JD.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
-          </a> 
+            <a class="navbar-brand" href="index.html" id="logo">
+              <img src="images/JD.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
+            </a> 
+          </div>
       </div>
     </nav>
 
