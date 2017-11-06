@@ -90,14 +90,13 @@
       float: right;
     }
 
-    .navbar-header {
-      float: left;
-      padding: 15px;
-      text-align: center;
-      width: 100%;
-    }
     .navbar-brand {
-      float:none;
+      padding: 0px;
+    }
+    .navbar-brand>img {
+      height: 100%;
+      padding: 15px;
+      width: auto;
     }
 
     #navbar { 
@@ -109,19 +108,21 @@
   <body>
 
     <nav class="navbar sticky-top" id="navbar">
-      <div class="navbar-header">
-        <div class="navbar-brand">
-          <ul id="nav navbar-nav navbar-left">
-            <li><a class="nav-link" href="#AboutMe"> About Me </a></li>
-            <li><a class="nav-link" href="#Projects"> Projects </a></li>
-            <li><a class="nav-link" href="#Skills"> Skills </a></li>
-            <li><a class="nav-link" href="#Awards"> Awards </a></li>
-            <li><a class="nav-link" href="#Contact"> Contact </a></li>
-          </ul>
-        <a href="index.html">
-          <img src="images/JD.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
-        </a>
-        </div> 
+      <div class="container-fluid">  
+        <div class="navbar-header">
+            <ul id="nav navbar-nav navbar-left">
+              <li><a class="nav-link" href="#AboutMe"> About Me </a></li>
+              <li><a class="nav-link" href="#Projects"> Projects </a></li>
+              <li><a class="nav-link" href="#Skills"> Skills </a></li>
+              <li><a class="nav-link" href="#Awards"> Awards </a></li>
+              <li><a class="nav-link" href="#Contact"> Contact </a></li>
+            </ul>
+          <div class="brand-centered">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/JD.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
+            </a>
+          </div> 
+        </div>
       </div>
     </nav>
 
