@@ -34,7 +34,7 @@
       height: 100%;
       top: -126;
       left: 0;
-      position: absolute;
+      position: relative;
 
     }
 
@@ -295,6 +295,20 @@
       transform: rotate(45deg); 
     }
 
+    /** Background photo top */
+
+    .thumbnail {
+      position: relative;
+    }
+
+    .caption {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      width: 100%;
+    }
+
+
   </style>
   
   <body>
@@ -327,8 +341,16 @@
       </div>
     </nav>
 
+    <div class="row">
+      <div class="thumbnail text-center">
+          <img src="img/IveyPhoto.jpg" alt="" class="img-responsive">
+          <div class="caption">
+              <p>Hi! My name is Jack Douglas. This is my personal website. Have a look around!</p>
+          </div>
+      </div>
+    </div>
 
-
+    <!--
     <section id="Home">
         <div class="col-md-12" style="text-align: center;">
           <p2 id="intro1"> Hi! My name is <p style="font-size: 48px;"> <b> Jack Douglas</b>.</p></p2>
@@ -339,7 +361,7 @@
       </div>
     </section>
 
-
+-->
 
     <section id="AboutMe">
       <div class="container">
@@ -347,11 +369,11 @@
           <h2> About Me </h2>
           <div class="divider"> </div>
  
-            <div class="col-md-6" style="text-align: left;">
+            <div class="col-md-4" style="text-align: left;">
               <p style="font-size: 24px;"> <b> Hey! </b> </p>
               <p style="font-size: 20px;"> I am a 16-year-old high school student born and raised in Toronto, Canada. I have attended Upper Canada College since grade 9. </p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <img src="images/CanadaWonderland.jpg" style="float: center;">
             </div>
 
