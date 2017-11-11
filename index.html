@@ -93,18 +93,11 @@
       width: 100%;
     }
     .navbar-brand {
-      float:none;
+      float:center;
     }
 
     #navbar { 
       background-color: rgba(240,240,240,0.9) !important; 
-    }
-
-    /** Navbar tabs */
-
-    .tabbable-panel {
-      border:1px solid #eee;
-      padding: 10px;
     }
 
     /* Default mode */
@@ -412,7 +405,20 @@
           <p> You've reached the end of my website. Awesome! If you'd like to contact me, you can reach me at the email seen below. You can send me a message on this website!</p>
           <br>
           <p> <i class="fa fa-envelope-o"> </i>   jackdouglas145@gmail.com </p>
-          <br>
+          <form>
+            <div class="form-group">
+              <label> Email address </label>
+              <input type="email" class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label> Subject </label>
+              <input type="subject" class="form-control">
+            </div>
+            <div class="form-group">
+              <label> Message </label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </form>
           <p> Check out some other platforms I'm on! </p>
           <div id="media" class="row">
             <a href="https://www.linkedin.com/in/jack-douglas-910896150/" style="text-decoration: none">
