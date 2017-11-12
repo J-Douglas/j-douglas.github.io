@@ -24,7 +24,7 @@
 
     $(function(){
       $(window).scroll(function() {
-          var scroll = $(window).screenY; // pixels scrolled from top
+          var scroll = $(window).scrollTop(); // pixels scrolled from top
           var os = $('#marker').offset().top; // pixels to the top of div1
           var ht = $('#marker').height(); // height of div1 in pixels
           // if you've scrolled further than the top of div1 plus it's height
@@ -34,8 +34,6 @@
           } else{
               $('#navbar').addClass('navbar1');
           }
-          console.log('os');
-          console.log('ht');
           console.log('scroll');
       });
     });
@@ -111,7 +109,7 @@
 
     }
     .navbar2 {
-      background-color: rgba(240,240,240,0.9) !important;
+      background-color: rgba(240,240,240,0.95) !important;
     }
 
     /* Default mode */
@@ -408,7 +406,9 @@
           <div class="divider"> </div>
           <p> You've reached the end of my website. Awesome! If you'd like to contact me, you can reach me at the email seen below. </p>
           <p> <i class="fa fa-envelope-o"> </i> jackdouglas145@gmail.com </p>
-          <p> You can send me a message on this website! </p>
+          <div>
+            <p> You can send me a message on this website! </p>
+          </div>
           <form>
             <div class="form-group">
               <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
