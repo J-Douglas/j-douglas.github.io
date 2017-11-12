@@ -30,7 +30,9 @@
           // if you've scrolled further than the top of div1 plus it's height
           // change the color. either by adding a class or setting a css property
           if(scroll > os + ht){
-              $('#navbar').addClass('navbarChange');
+              $('#navbar').addClass('navbar2');
+          } else{
+              $('#navbar').addClass('navbar2');
           }
       });
     });
@@ -101,11 +103,11 @@
       float:center;
     }
 
-    #navbar { 
+    #navbar1 { 
       background-color: rgba(0,0,0,0) !important; 
 
     }
-    .navbarChange {
+    .navbar2 {
       background-color: rgba(240,240,240,0.9) !important;
     }
 
