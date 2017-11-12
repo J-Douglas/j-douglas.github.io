@@ -24,7 +24,7 @@
 
     $(function(){
       $(window).scroll(function() {
-          var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+          var scroll = $(window).screenY(); // Y-pos of screen
           var os = $('#marker').offset().top; // pixels to the top of div1
           var ht = $('#marker').height(); // height of div1 in pixels
           // if you've scrolled further than the top of div1 plus it's height
@@ -32,7 +32,7 @@
           if(scroll > os + ht){
               $('#navbar').addClass('navbar2');
           } else{
-              $('#navbar').addClass('navbar2');
+              $('#navbar').addClass('navbar1');
           }
       });
     });
@@ -109,12 +109,6 @@
     }
     .navbar2 {
       background-color: rgba(240,240,240,0.9) !important;
-    }
-
-    .mediaAlign {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     /* Default mode */
@@ -428,7 +422,6 @@
           <p> Check out some other platforms I'm on! </p>
           <div id="media" class="col-md-12">
             <div class="row">
-              <div class="mediaAlign">
                 <a href="https://www.linkedin.com/in/jack-douglas-910896150/" style="text-decoration: none">
                   <i class="fa fa-linkedin-square fa-4x" style="color: #014B67;"> </i>
                 </a>
@@ -436,7 +429,6 @@
                 <a href="https://github.com/j-douglas/" style="text-decoration: none">
                   <i class="fa fa-github fa-4x" style="color: #000000;"> </i>
                 </a>
-              </div>
             <div>
         </div>
       </div>
