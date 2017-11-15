@@ -28,7 +28,7 @@
         if($('#marker').offset().top + $('#marker').height() <   $(this).offset().top) {
         $('#navbar').removeClass('navbar1').addClass('navbar2');    
     } else {
-        $('#navbar').addClass('navbar2').removeClass('navbar1');
+        $('#navbar').addClass('navbar1').removeClass('navbar2');
     }
     });
 
@@ -305,7 +305,7 @@
   
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <nav class="navbar sticky-top navbar1" id="navbar" data-spy="scroll" data-target=".marker" data-offset="5"> 
+    <nav class="navbar sticky-top navbar1" id="navbar"> 
       <div class="navbar-header row">
         <div class="col-md-4">
             <div class="tabbable-line">
