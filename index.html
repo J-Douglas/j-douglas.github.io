@@ -22,25 +22,12 @@
 
   <script type="text/javascript">
 
-    function calibrate(event){
-      var top = event.screenY;
-      var left = event.screenX;
+    $('#marker').scroll(function() {
+        if($('#marker').offset().top + $('#marker').height() <   $(this).offset().top) {
+        $('#navbar').removeClass('navbar1').addClass('navbar2');    
+    } else {
+        $('#navbar').addClass('navbar2').removeClass('navbar1');
     }
-
-    $(function(){
-      $(window).scroll(function() {
-          // var scroll = $(window).scrollTop(); // pixels scrolled from top
-          var os = $('#marker').offset().top; // pixels to the top of div1
-          var ht = $('#marker').height(); // height of div1 in pixels
-          // if you've scrolled further than the top of div1 plus it's height
-          // change the color. either by adding a class or setting a css property
-          if(top > os + ht){
-              $('#navbar').addClass('navbar2');
-          } else{
-              $('#navbar').addClass('navbar1');
-          }
-          console.log('scroll');
-      });
     });
 
   </script>
@@ -109,7 +96,7 @@
       float:center;
     }
 
-    #navbar1 { 
+    .navbar1 { 
       background-color: rgba(0,0,0,0) !important; 
 
     }
@@ -273,7 +260,7 @@
       -ms-transform: rotate(45deg);
       transform: rotate(45deg); 
     }
-        .section-title2 .divider {
+    .section-title2 .divider {
       position: relative;
       border-bottom: 1px solid #000000;
       margin-bottom: 30px;
@@ -314,9 +301,9 @@
 
   </style>
   
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <nav class="navbar sticky-top" id="navbar"> 
+    <nav class="navbar sticky-top navbar1" id="navbar" data-spy="scroll" data-target=".marker" data-offset="5"> 
       <div class="navbar-header row">
         <div class="col-md-4">
             <div class="tabbable-line">
