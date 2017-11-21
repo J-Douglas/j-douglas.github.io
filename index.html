@@ -17,7 +17,20 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!--Icon Fonts - Font Awesome Icons-->
     <link rel="stylesheet" href="Font_Awesome/css/font-awesome.css">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="css/namari-color.css">
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <link rel="icon" href="images/JD.jpg">
 
@@ -25,27 +38,7 @@
 
   </head>
 
-  <script type="text/javascript">
-
-    $('#marker').scroll(function() {
-        if($('#marker').offset().top + $('#marker').height() <   $(this).offset().top) {
-        $('#navbar').removeClass('navbar1').addClass('navbar2');    
-    } else {
-        $('#navbar').addClass('navbar1').removeClass('navbar2');
-    }
-    });
-
-    console.log()
-
-  </script>
-
   <style>
-
-    #coverPhoto {
-      top: -110px;
-      left: -15px;
-      position: relative;
-    }
 
     #AboutMe {
       margin-top: -180px;
@@ -115,84 +108,6 @@
     .navbar2 {
       background-color: rgba(240,240,240,0.95) !important;
     }
-
-    /* Default mode */
-    .tabbable-line > .nav-tabs {
-      border: none;
-      margin: 0px;
-    }
-    .tabbable-line > .nav-tabs > li {
-      margin-right: 2px;
-    }
-    .tabbable-line > .nav-tabs > li > a {
-      border: 0;
-      margin-right: 0;
-      color: #737373;
-    }
-    .tabbable-line > .nav-tabs > li > a > i {
-      color: #a6a6a6;
-    }
-    .tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
-      border-bottom: 4px solid #fbcdcf;
-    }
-    .tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
-      border: 0;
-      background: none !important;
-      color: #333333;
-    }
-    .tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
-      color: #a6a6a6;
-    }
-    .tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
-      margin-top: 0px;
-    }
-    .tabbable-line > .nav-tabs > li.active {
-      border-bottom: 4px solid #f3565d;
-      position: relative;
-    }
-    .tabbable-line > .nav-tabs > li.active > a {
-      border: 0;
-      color: #333333;
-    }
-    .tabbable-line > .nav-tabs > li.active > a > i {
-      color: #404040;
-    }
-    .tabbable-line > .tab-content {
-      margin-top: -3px;
-      background-color: #fff;
-      border: 0;
-      border-top: 1px solid #eee;
-      padding: 15px 0;
-    }
-    .portlet .tabbable-line > .tab-content {
-      padding-bottom: 0;
-    }
-
-    /* Below tabs mode */
-
-    .tabbable-line.tabs-below > .nav-tabs > li {
-      border-top: 4px solid transparent;
-    }
-    .tabbable-line.tabs-below > .nav-tabs > li > a {
-      margin-top: 0;
-    }
-    .tabbable-line.tabs-below > .nav-tabs > li:hover {
-      border-bottom: 0;
-      border-top: 4px solid #fbcdcf;
-    }
-    .tabbable-line.tabs-below > .nav-tabs > li.active {
-      margin-bottom: -2px;
-      border-bottom: 0;
-      border-top: 4px solid #f3565d;
-    }
-    .tabbable-line.tabs-below > .tab-content {
-      margin-top: -10px;
-      border-top: 0;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 15px;
-    }
-
-    /** Navbar specs */
 
     #logo {
       float: center;
@@ -339,66 +254,121 @@
         color: white;
     }
 
-    #home {
-      background-image: url("images/TBCoverPhoto.jpg");
-    }
-
-    #spacing {
-      height: 150px;
-    }
 
   </style>
   
   <body>
 
-    <div id="home">
-
-      <nav class="navbar sticky-top navbar1" id="nav" role="navigation"> 
-        <div class="navbar-header row">
-          <div class="col-md-4">
-              <div class="tabbable-line">
-                <ul class="nav nav-tabs">
-                  <li><a class="text-center" data-toggle="tab" style="text-decoration: none" href="#AboutMe"> <p style="color: white;"> About Me </p> </a></li>
-                  <li><a class="text-right" data-toggle="tab" style="text-decoration: none" href="#Projects"> <p style="color: white;"> Projects </p> </a></li>
-                  <li><a class="text-left" data-toggle="tab" style="text-decoration: none" href="#Skills"> <p style="color: white;"> Skills </p> </a></li>
-                  <li><a class="text-center" data-toggle="tab" style="text-decoration: none" href="#Awards"> <p style="color: white;"> Awards </p> </a></li>
-                </ul>
-              </div>
-          </div>
-          <div class="col-md-4">  
-            <a class="navbar-brand" href="index.html" id="logo">
-              <img src="images/JD.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
-            </a>
-          </div>
-          <div class="col-md-4">
-              <div class="tabbable-line">
-                <ul class="nav nav-tabs">
-                  <li><a class="text-right" data-toggle="tab" style="text-decoration: none" href="#Contact"> <p style="color: white;"> Contact </p> </a></li>
-                </ul>
-              </div>
-          </div>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status" class="la-ball-triangle-path">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-      </nav>
-
-      <div id="spacing">
-      </div>
-
-      <div id="marker">
-      </div>
-
-      <div id="welcome">
-        <h1> Welcome! </h1>
-        <br>
-        <h1> My name is <b> Jack Douglas </b> </h1>
-        <br>
-        <br>
-        <h3> This is my personal website. Have a look around! </h3>
-      </div>
-
-      <div id="spacing">
-      </div>
-
     </div>
+    <!--End of Preloader-->
+
+    <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+        <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+        <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+        <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+        <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+    </div>
+
+    <div id="wrapper">
+
+        <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+            <div id="header" class="nav-collapse">
+                <div class="row clearfix">
+                    <div class="col-1">
+
+                        <!--Logo-->
+                        <div id="logo">
+
+                            <!--Logo that is shown on the banner-->
+                            <img src="images/logo.png" id="banner-logo" alt="Landing Page"/>
+                            <!--End of Banner Logo-->
+
+                            <!--The Logo that is shown on the sticky Navigation Bar-->
+                            <img src="images/logo-2.png" id="navigation-logo" alt="Landing Page"/>
+                            <!--End of Navigation Logo-->
+
+                        </div>
+                        <!--End of Logo-->
+
+                        <aside>
+
+                            <!--Social Icons in Header-->
+                            <ul class="social-icons">
+                                <li>
+                                    <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/jack-douglas-910896150/">
+                                        <i class="fa fa-linkedin-square fa-1x"></i><span>LinkedIn</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" title="Github" href="https://github.com/J-Douglas/">
+                                        <i class="fa fa-github fa-1x"></i><span>Github</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--End of Social Icons in Header-->
+
+                        </aside>
+
+                        <!--Main Navigation-->
+                        <nav id="nav-main">
+                            <ul>
+                                <li>
+                                    <a href="#banner">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a href="#gallery">Experience</a>
+                                </li>
+                                <li>
+                                    <a href="#services">Skills</a>
+                                </li>
+                                <li>
+                                    <a href="#testimonials">Awards</a>
+                                </li>
+                                <li>
+                                    <a href="#clients">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--End of Main Navigation-->
+
+                        <div id="nav-trigger"><span></span></div>
+                        <nav id="nav-mobile"></nav>
+
+                    </div>
+                </div>
+            </div><!--End of Header-->
+
+
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+
+            <div class="col-38">
+
+                <div class="section-heading">
+                    <h1>WELCOME! <br> MY NAME IS JACK DOUGLAS.</h1>
+                    <h2>This website is a portfolio of my experience, skills, awards, and contact information.</h2>
+                </div>
+
+                <!--Call to Action-->
+                <a href="#" class="button">START CREATING TODAY</a>
+                <!--End Call to Action-->
+
+            </div>
+
+        </div><!--End of Row-->
+
+    </header>
+
 
     <section id="AboutMe">
       <div class="container">
