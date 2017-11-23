@@ -296,7 +296,7 @@ section {
 }
 
 .col-38 {
-    width: 38.2%;
+    width: 50%;
 }
 
 /* --------- 2.1 Header --------- */
@@ -353,13 +353,17 @@ section {
 }
 
 #logo img {
-    max-height: 45px;
     vertical-align: middle;
     margin-right: 15px;
 }
 
 #navigation-logo {
     display: none;
+    max-height: 40px;
+}
+
+#banner-logo {
+    max-height: 60px;
 }
 
 .nav-solid #logo #banner-logo {
@@ -380,7 +384,7 @@ section {
 
 .button {
     font-size: 16px;
-    margin: 35px 0;
+    margin: 3px 0;
     padding: 11px 16px;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
