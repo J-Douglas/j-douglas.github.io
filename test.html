@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$.get("navigation.html", function(data){
+	    $("#nav-placeholder").replaceWith(data);
+	});
+	$.get("footer.html", function(data) {
+		$("#footer-placeholder").replaceWith(data);
+	});
+
+</script>
+</head>
+<body>
+
+	<div class="nav-placeholder">
+	</div>
+
+
+	<div class="footer-placeholder">
+	</div>
+
+</body>
+
+</html>
