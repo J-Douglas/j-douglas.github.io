@@ -140,7 +140,7 @@
                 </div>
 
 
-                <div style="overflow: hidden; white-space: nowrap;">
+                <div style="padding-bottom: 80px;">
                     <!--Resume Button-->
                     <div style="display: inline;">
                       <a href="documents/JackDouglasResume.pdf" class="button" target="_blank">My Resume</a>
@@ -152,7 +152,7 @@
                     </div>
                     <!--End of Newsletter-->
                 </div>
-
+                
             </div>
 
         </div>
@@ -168,10 +168,19 @@
         <div class="row clearfix">
 
             <div class="col-2-3">
-                  <div class="section-heading">
+                <div class="section-heading" style="padding-bottom: 0px;">
                       <h2 class="section-title">About Me</h2>
                       <p> Hey there! I'm Jack, a grade 11 student who attends Upper Canada College. I am passionate about artificial intelligence, cryptocurrency, robotics, and health technology. As well, I have developed a strong interest for web development. </p>
-                  </div>
+                </div>
+                <div style="padding-top: 0px;">
+                    <p style="font-size: 22px; margin-top: 0px;"> <b> Education </b> </p>
+                    <br>
+                    <p>
+                </div>
+                <div>
+                    <p style="font-size: 22px;"> <b> Experience </b> </p>
+                </div>
+
 
             </div>
 
@@ -188,6 +197,16 @@
       <!--Projects-->
         <section id="Projects" class="scrollto clearfix">
             <div class="row clearfix">
+
+                <div class="col-3">
+
+                    <div class="section-heading">
+                        <h2 class="section-title">Projects</h2>
+                        <p class="section-subtitle">I love working on projects. I believe that they show you can work in a team and are passionate about its topic. Here are all the projects I have worked on. You can hover over the images of the projects to learn more about them. As well, you can click on them to go their website. <b> I am always interested in working on more projects so please feel free to reach out to me.</b> </p>
+                    </div>
+
+                </div>
+
 
                 <div class="col-2-3">
 
@@ -210,15 +229,6 @@
                         <img id="project" src="images/ThermoBeat.png" alt="ThermoBeat"/>
                         <div class="Projects-overlay"><span> ThermoBeat <br><br> ThermoBeat is an innovative product that aims to replace modern pacemakers by eliminating the need for replacement through the utilization of thermal energy technology. </span></div>
                     </a>
-
-                </div>
-
-                <div class="col-3">
-
-                    <div class="section-heading">
-                        <h2 class="section-title">Projects</h2>
-                        <p class="section-subtitle">I love working on projects. I believe that they show you can work in a team and are passionate about its topic. Here are all the projects I have worked on. You can hover over the images of the projects to learn more about them. As well, you can click on them to go their website. <b> I am always interested in working on more projects so please feel free to reach out to me.</b> </p>
-                    </div>
 
                 </div>
 
@@ -357,45 +367,76 @@
 
       <!--Contact-->
         <section id="Contact" class="secondary-color scrollto clearfix">
-            <div class="row clearfix" style="padding-bottom:20px;">
+            <div class="row clearfix" style="padding-bottom: 0px;">
 
-                <div class="col-2-3">
-                  <div class="section-heading">
+                
+                <div class="section-heading">
                         <h2 class="section-title">Contact</h2>
-                        <p style="width: 105%;"> You've reached the end of my website. Awesome! Feel free to contact me via email. You can also use the integrated message form below. </p>
-                        <form>
-                            <div class="col-3">
-                                <input style="width: 100%; height: 45px; border-radius: 10px;" placeholder="Name"></input>
-                            </div>
-                            <div class="col-3">
-                                <input style="width: 100%; height: 45px; border-radius: 10px;" placeholder="Email"></input>
-                            </div>
-                            <div class="col-3">
-                                <input style="width: 100%; height: 45px; border-radius: 10px;" placeholder="Subject"></input>
-                            </div>
-                            <div class="col-1" style="padding-top: 0px;">
-                                <textarea placeholder="Message" style="height: 130px; width:100%; border-radius: 15px; font-size:15px; font-family: 'Open Sans', sans-serif, Arial, Helvetica; font-weight: normal; color: #111; "></textarea>
-                            </div>
-                            <div class="col-1" style="padding-top:0px; text-align: center;">
-                                <input type="submit" style="width: 15%; border-radius: 10px;"></input>
-                            </div>
-                        </form>
+                   
+                        <p> You've reached the end of my website. Awesome! Feel free to contact me via email. You can also use the integrated message form below. </p>
+                    
+                    <div class="col-1">
+                        <div class="col-4 verticalLine" style="text-align: center; padding-top: 30px; padding-right: 50px;">
 
-                  </div>
+                          <!--Email-->
+                          <h4> <b> Email </b> </h4>
+                          <h5> <i class="fa fa-envelope"> </i> jackdouglas145@gmail.com </h5>
+                          
+                          <br>
 
-                </div>
+                          <!--Location-->
+                          <h4> <b> Location </b> </h4>
+                          <h5> <i class="fa fa-map-pin"> </i> Toronto, Canada </h5>
 
-                <div class="col-3" style="text-align: center; padding-top: 170px;">
+                          <br>
 
-                  <!--Email-->
-                  <h4> <b> <u> Email  </u> </b> </h4>
-                  <h5> <i class="fa fa-envelope"> </i> jackdouglas145@gmail.com </h5>
-                  
-                  <br>
+                          <!--Subscribe to Newsletter-->
+                          <h4> <b> Subscribe to my Newsletter </b> </h4>
+                          <input placeholder="Email"></input>
 
-                  <!--Location-->
-                  <h4> <b> <u> Location </u> </b> </h4>
-                  <h5> <i class="fa fa-map-pin"> </i> Toronto, Canada </h5>
+                        </div>
+
+                        <!--Map-->
+                            <div id="map" class="col-4 verticalLine"></div>
+                            <script>
+                                  function initMap() {
+                                    var uluru = {lat: -25.363, lng: 131.044};
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                      zoom: 4,
+                                      center: uluru
+                                    });
+                                    var marker = new google.maps.Marker({
+                                      position: uluru,
+                                      map: map
+                                    });
+                                  }
+                            </script>
+                            <script async defer
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvczNnn8yxkakWAfOdxvtgktf7Pi2Q2m0&callback=initMap">
+                            </script>
+                        <!--End of Map-->
+
+                        <div class="col-2" style="padding-left: 40px;"> 
+                            <form>
+                                <div class="col-3" style="padding-right:10px;">
+                                    <input style="width: 100%; height: 45px; border-radius: 6px;" placeholder="Name"></input>
+                                </div>
+                                <div class="col-3" style="padding-left:10px; padding-right:10px;">
+                                    <input style="width: 100%; height: 45px; border-radius: 6px;" placeholder="Email"></input>
+                                </div>
+                                <div class="col-3" style="padding-left:10px;">
+                                    <input style="width: 100%; height: 45px; border-radius: 6px;" placeholder="Subject"></input>
+                                </div>
+                                <div class="col-1" style="padding-top: 0px;">
+                                    <textarea placeholder="Message" style="height: 130px; width:100%; border-radius: 15px; font-size:15px; font-family: 'Open Sans', sans-serif, Arial, Helvetica; font-weight: normal; color: #111; "></textarea>
+                                </div>
+                                <div class="col-1" style="padding-top:0px; text-align: center;">
+                                    <input type="submit" style="width: 15%; border-radius: 20px;"></input>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
 
                 </div>
 
