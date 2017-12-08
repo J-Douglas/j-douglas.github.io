@@ -327,3 +327,16 @@ h6 {
 #landing-footer i {
     color:#999;
 }
+    .verticalLineR {
+        border-right: 2px solid #000000;
+    }
+
+    .verticalLineL {
+        border-left: 2px solid #000000;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+
