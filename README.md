@@ -1,4 +1,4 @@
-# Jack Douglas' Website
+# Jack Douglas' Personal Website
 
 This is my personal website which acts as a portfolio of my life.
 
