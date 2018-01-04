@@ -1,0 +1,5 @@
+# Bad practice to commit .DS_Store
+.DS_Store
+*/.DS_Store
+
+
