@@ -8,7 +8,7 @@
     <title>Jack Douglas</title>
 
     <!--Meta Keywords and Description-->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="portfolio">
     <meta name="description" content="A website for Jack Douglas that acts as a portfolio of projects, skills, and awards.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 
@@ -473,21 +473,21 @@
                         </div>
 
                         <div class="col-2" style="padding-left: 40px; padding-top: 0px;"> 
-                            <form action="" class="newsletter" id="mailchimp-signup" target="_blank" novalidate>
+                            <form action="https://formspree.io/jack.douglas@ucc.on.ca" method="POST">
                                 <div class="col-3" style="padding-right:10px;">
-                                    <input style="width: 100%; height: 45px; border-radius: 4px;" placeholder="Name"></input>
+                                    <input style="width: 100%; height: 45px; border-radius: 4px;" type="text" name="name" placeholder="Name"></input>
                                 </div>
                                 <div class="col-3" style="padding-left:10px; padding-right:10px;">
-                                    <input style="width: 100%; height: 45px; border-radius: 4px;" placeholder="Email"></input>
+                                    <input style="width: 100%; height: 45px; border-radius: 4px;" type="email" name="_replyto" placeholder="Email"></input>
                                 </div>
                                 <div class="col-3" style="padding-left:10px;">
-                                    <input style="width: 100%; height: 45px; border-radius: 4px;" placeholder="Subject"></input>
+                                    <input type="hidden" name="_subject" value="New submission!" style="width: 100%; height: 45px; border-radius: 4px;" placeholder="Subject"></input>
                                 </div>
                                 <div class="col-1" style="padding-top: 0px;">
-                                    <textarea placeholder="Message" style="height: 130px; width:100%; border-radius: 4x; font-size:15px; font-family: 'Open Sans', sans-serif, Arial, Helvetica; font-weight: normal; color: #111; "></textarea>
+                                    <textarea placeholder="Message" name="message" style="height: 130px; width:100%; border-radius: 4x; font-size:15px; font-family: 'Open Sans', sans-serif, Arial, Helvetica; font-weight: normal; color: #111; "></textarea>
                                 </div>
                                 <div class="col-1" style="padding-top:0px; text-align: center;">
-                                    <input type="submit" style="width: 20%; border-radius: 4px;"></input>
+                                    <input type="submit" value="Send" style="width: 20%; border-radius: 4px;"></input>
                                 </div>
                             </form>
 
