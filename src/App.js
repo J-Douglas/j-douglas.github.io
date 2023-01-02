@@ -59,7 +59,7 @@ function App() {
                   <br></br>
                   <Text>
                     I am currently looking for internship and research opportunities in <b>May 2023 - December 2023</b>. 
-                    If my experience interests you, feel free to reach out at <b>jack.douglas [at] uwaterloo [dot] edu</b>!
+                    If my experience interests you, feel free to reach out at <b>jack.douglas [at] uwaterloo [dot] ca</b>!
                   </Text>
                 </CardBody>
               </Card>
