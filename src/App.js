@@ -1,7 +1,7 @@
 import ProfilePic from "./img/WebProfilePic.jpg";
 import Resume from "./doc/JackDouglasResume.pdf"
 import './App.css';
-import { ChakraProvider, Card, CardHeader, CardBody, Center, CardFooter, Image, Stack, Heading, Text, Button, background, Box, Link, Icon, HStack, VStack, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider, Card, CardHeader, CardBody, Center, Image, Stack, Heading, Text, Box, Link, Icon, HStack, VStack, extendTheme } from '@chakra-ui/react'
 import { SiGithub, SiLinkedin, SiGooglescholar } from 'react-icons/si';
 import { FaFileDownload } from 'react-icons/fa';
 
