@@ -1,4 +1,5 @@
 import ProfilePic from "./img/WebProfilePic.jpg";
+import SEWebRing from "./img/sewebring.png"
 import Resume from "./doc/JackDouglasResume.pdf"
 import './App.css';
 import { ChakraProvider, Card, CardHeader, CardBody, Center, Image, Stack, Heading, Text, Box, Link, Icon, HStack, VStack, extendTheme } from '@chakra-ui/react'
@@ -46,7 +47,8 @@ function App() {
                         <Link onClick={()=>gaEventTracker('LinkedIn')} href="https://www.linkedin.com/in/j-douglas/" target="_blank"><Icon color={"blue.400"} boxSize={6} as={SiLinkedin}/></Link>
                         <Link onClick={()=>gaEventTracker('Resume')} href={Resume} target="_blank"><Icon color={"orange.400"} boxSize={6} as={FaFileDownload}/></Link> 
                         <Link onClick={()=>gaEventTracker('GitHub')} href="https://github.com/J-Douglas" target="_blank"><Icon boxSize={6} as={SiGithub}/></Link> 
-                        <Link onClick={()=>gaEventTracker('Google Scholar')} href="https://scholar.google.ca/citations?hl=en&user=X-s3kzUAAAAJ#d=gs_hdr_drw&t=1672643914810" target="_blank"><Icon color={"blue.500"} boxSize={6} as={SiGooglescholar}/></Link> 
+                        <Link onClick={()=>gaEventTracker('Google Scholar')} href="https://scholar.google.ca/citations?hl=en&user=X-s3kzUAAAAJ#d=gs_hdr_drw&t=1672643914810" target="_blank"><Icon color={"blue.500"} boxSize={6} as={SiGooglescholar}/></Link>
+                        <Link onClick={()=>gaEventTracker('SE Web Ring')} href="https://se-webring.xyz/" target="_blank"><Image width={'24px'} height={'30px'} src={SEWebRing} alt='SE Web Ring'/></Link> 
                       </HStack>
                     </Center>
                   </VStack>
