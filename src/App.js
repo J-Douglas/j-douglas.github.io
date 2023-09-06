@@ -56,17 +56,17 @@ function App() {
                 <CardBody>
                   <Text> 
                     Hey there! 
-                    I'm a 4A software engineering student at the University of Waterloo. 
-                    I am currently working at <b>Apple</b> as an <b>AI/ML intern</b>. Previously, I have worked on distributed systems in autonomous vehicles at <b>NVIDIA</b>, Ethereum transaction indexers at <b>BitGo</b>, and synchronizing microservices at <b>BlackBerry</b>.
+                    I'm a 4B software engineering student at the University of Waterloo. I have had internship experiences 
+                    Most recently, I worked at <b>Apple</b> as an <b>AI/ML intern</b> on a triaging service for Siri pipeline failures. Prior, I have worked on distributed systems in autonomous vehicles at <b>NVIDIA</b>, Ethereum transaction indexers at <b>BitGo</b>, and synchronizing microservices at <b>BlackBerry</b>.
                   </Text>
                   <br></br>
                   <Text>
-                    I researched with fellow Waterloo undergrad Jimmy Di on <b>adversarial machine unlearning attacks</b> on image classifiers under Professor Gautam Kamath and Postdoc Ayush Sekhari's supervision. 
-                    As well, I am a <b>lecturer</b> and <b>president</b> of the <b>UWaterloo Data Science Club</b>.  
+                    I researched with fellow Waterloo student Jimmy Di on <b>novel adversarial machine unlearning attacks</b> under Professor Gautam Kamath and Postdoc Ayush Sekhari's supervision. 
+                    As well, I am a <b>lecturer</b> and <b>former president</b> of the <b>UWaterloo Data Science Club</b>.  
                   </Text>
                   <br></br>
                   <Text>
-                    I am currently looking for internship and research opportunities in <b>May 2023 - December 2023</b>. 
+                    I am currently looking for full-time and research opportunities! 
                     If my experience interests you, feel free to reach out at <b>jack.douglas [at] uwaterloo [dot] ca</b>!
                   </Text>
                 </CardBody>
