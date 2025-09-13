@@ -37,6 +37,13 @@ function App() {
                     src={ProfilePic}
                     alt='Profile Pic'
                     borderRadius='lg'
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
+                    // Intrinsic dimensions to reduce layout shift
+                    // (keeps display responsive via CSS width/maxW)
+                    height={200}
+                    width={200}
                   />
                 </Center>
                 <CardHeader paddingBottom={'0px'}>
@@ -48,7 +55,7 @@ function App() {
                         <Link onClick={()=>gaEventTracker('Resume')} href={Resume} target="_blank"><Icon color={"orange.400"} boxSize={6} as={FaFileDownload}/></Link> 
                         <Link onClick={()=>gaEventTracker('GitHub')} href="https://github.com/J-Douglas" target="_blank"><Icon boxSize={6} as={SiGithub}/></Link> 
                         <Link onClick={()=>gaEventTracker('Google Scholar')} href="https://scholar.google.ca/citations?hl=en&user=X-s3kzUAAAAJ#d=gs_hdr_drw&t=1672643914810" target="_blank"><Icon color={"blue.500"} boxSize={6} as={SiGooglescholar}/></Link>
-                        <Link onClick={()=>gaEventTracker('SE Web Ring')} href="https://se-webring.xyz/" target="_blank"><Image width={'24px'} height={'30px'} src={SEWebRing} alt='SE Web Ring'/></Link> 
+                        <Link onClick={()=>gaEventTracker('SE Web Ring')} href="https://se-webring.xyz/" target="_blank"><Image width={24} height={30} loading="lazy" decoding="async" src={SEWebRing} alt='SE Web Ring'/></Link> 
                       </HStack>
                     </Center>
                   </VStack>
