@@ -32,7 +32,7 @@ function App() {
           {['elevated'].map((variant) => (
             <Center>
               <Card key={variant} bg='white' variant={variant} width="100%" maxW="750px" margin='20px'>
-                <Center>
+                <Center pt={4}>
                   <Image
                     width="50%"
                     maxW="200px"
@@ -42,10 +42,9 @@ function App() {
                     loading="eager"
                     fetchPriority="high"
                     decoding="async"
-                    // Intrinsic dimensions to reduce layout shift
-                    // (keeps display responsive via CSS width/maxW)
                     height={200}
                     width={200}
+                    objectFit="cover"
                   />
                 </Center>
                 <CardHeader paddingBottom={'0px'}>
